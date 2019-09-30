@@ -264,11 +264,11 @@ public class Repository implements Serializable {
         this.fullName = fullName;
     }
 
-    public Boolean get_private() {
+    public Boolean getPrivate() {
         return _private;
     }
 
-    public void set_private(Boolean _private) {
+    public void setPrivate(Boolean _private) {
         this._private = _private;
     }
 

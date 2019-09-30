@@ -19,7 +19,7 @@ public class Application {
      * Initialize all the services
      */
     @Bean
-    ApplicationRunner initServices(List<ServiceInterface> interfaces) {
+    public ApplicationRunner initServices(List<ServiceInterface> interfaces) {
         return args -> interfaces.forEach(ServiceInterface::init);
     }
 

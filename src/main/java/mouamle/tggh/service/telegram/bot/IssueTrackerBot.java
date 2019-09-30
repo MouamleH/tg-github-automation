@@ -11,9 +11,6 @@ import org.telegram.telegrambots.meta.api.objects.Message;
 
 public class IssueTrackerBot extends AbilityBot {
 
-    private static final String GH_TG_MAP = "GH_TG_MAP";
-    private static final String ISSUES_MESSAGES_MAP = "ISSUES_MESSAGES_MAP";
-
     private final int creatorId;
     private final DataService dataService;
 

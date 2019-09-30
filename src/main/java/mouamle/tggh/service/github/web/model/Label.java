@@ -75,11 +75,11 @@ public class Label implements Serializable {
         this.color = color;
     }
 
-    public boolean is_default() {
+    public boolean isDefault() {
         return _default;
     }
 
-    public void set_default(boolean _default) {
+    public void setDefault(boolean _default) {
         this._default = _default;
     }
 }
