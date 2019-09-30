@@ -1,11 +1,12 @@
 package mouamle.tggh;
 
 import mouamle.tggh.common.ServiceInterface;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+
+import java.util.List;
 
 @SpringBootApplication
 public class Application {
@@ -14,12 +15,12 @@ public class Application {
         SpringApplication.run(Application.class);
     }
 
+    /**
+     * Initialize all the services
+     */
     @Bean
-    ApplicationRunner init(@Qualifier("githubInterface") ServiceInterface githubInterface,
-                           @Qualifier("telegramInterface") ServiceInterface telegramInterface) {
-        return args -> {
-            githubInterface.init();
-            telegramInterface.init();
-        };
+    ApplicationRunner initServices(List<ServiceInterface> interfaces) {
+        return args -> interfaces.forEach(ServiceInterface::init);
     }
+
 }
