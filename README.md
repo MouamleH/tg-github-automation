@@ -1,3 +1,5 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/bea5152b6ce0448aafcc012bb8bdeca7)](https://www.codacy.com/manual/MouamleH/tg-github-automation?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MouamleH/tg-github-automation&amp;utm_campaign=Badge_Grade)
+
 # Telegram Github Automation
 
 ## Setup
